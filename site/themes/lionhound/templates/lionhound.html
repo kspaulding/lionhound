@@ -1,0 +1,205 @@
+<section id="title">
+  <div class="grid-x grid-margin-x text-center">
+    <div class="cell small-12 medium-8 medium-offset-2">
+      <h1>{{ title }}</h1>
+      <p id="ridgeback-act"><img src="img/icon-ridgeback.svg" onerror="this.onerror=null; this.src='img/icon-ridgeback.png'" width="240" height="240" alt="Ridgeback Icon" class="svg ico-ridgeback focal-icon"></p>
+      <div class="intro">{{ content }}</div>  
+    </div>
+  </div>
+</section>
+
+<section id="lionhound" class="image-grid-listing">
+  
+  <!-- lionhound Row 1 -->
+  
+  <div class="grid-container fluid">
+    <div class="grid-x">
+      {{ collection:lionhound sort="order" limit="1" }}
+        <div class="cell small-12 large-8">
+          <div class="image">
+            {{ assets:tile_wide }}
+              <img src="{{ glide:tile_wide preset="wide"}}" class="hide-for-small-only">
+               <img src="{{ glide:tile_wide preset="med"}}" class="show-for-small-only">
+            {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <p class="lead">{{ content }}</p>
+            </div>
+          </div>
+        </div>
+      {{ /collection:lionhound }}
+      {{ collection:lionhound sort="order" offset="1" limit="1" }}
+      <div class="cell small-12 medium-6 large-4">
+        <a href="{{ url }}" class="entry">
+          <div class="image">
+              {{ assets:tile_wide }}
+                <img src="{{ glide:tile_wide preset="med"}}" >
+              {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <p class="lead">{{ content }}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:lionhound }}
+      {{ collection:lionhound sort="order" offset="2" limit="1" }}
+      <div class="cell small-12 medium-6 large-4">
+        <a href="{{ url }}" class="entry medium">
+          <div class="image">
+            {{ assets:tile_tall }}
+              <img src="{{ glide:tile_tall preset="tall"}}" class="show-for-large">
+            {{ /assets:tile_tall }}
+            {{ assets:tile_wide }}
+              <img src="{{ glide:tile_wide preset="med"}}" class="hide-for-large">
+            {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <p class="lead">{{ content }}</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:lionhound }}
+      
+      <div class="cell small-12 large-8">
+        <div class="grid-x">
+          
+          {{ collection:lionhound sort="order" offset="3" limit="1" }}
+          <div class="cell small-12 medium-6 ">
+            <a href="{{ url }}" class="entry medium">
+              <div class="image">
+                {{ assets:tile_wide }}
+                  <img src="{{ glide:tile_wide preset="med"}}" >
+                {{ /assets:tile_wide }}
+              </div>
+              <div class="content">
+                <div class="inner">
+                  <h2>{{ title }}</h2>
+                  <p class="lead">{{ content }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          {{ /collection:lionhound }}
+          
+          {{ collection:lionhound sort="order" offset="4" limit="1" }}
+          <div class="cell small-12 medium-6 ">
+            <a href="{{ url }}" class="entry medium">
+              <div class="image">
+                {{ assets:tile_wide }}
+                  <img src="{{ glide:tile_wide preset="med"}}" >
+                {{ /assets:tile_wide }}
+              </div>
+              <div class="content">
+                <div class="inner">
+                  <h2>{{ title }}</h2>
+                  <p class="lead">{{ content }}</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {{ /collection:lionhound }}
+          
+          <div class="cell small-12 medium-12">
+            <div class="entry shout-out">
+              <div class="image">
+                <img src="/assets/img/site-assets/lionhound-braggin-grid-wide.gif" width="1000" alt="I Deliver" class="hide-for-small-only">
+              </div>
+              <div class="shout-out-text">
+                <div class="inner">
+                  <h4 class="fitext">We received Zuva at 12 weeks old from Arno Van Wick (Port Elizabeth, South Africa). She has an amazing temperment and has proven to be a dependable companion and loving family member. We hope you enjoy the chronicles of her journey.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {{ collection:lionhound sort="order" offset="5" limit="1" }}
+      <div class="cell small-12 medium-6 large-4">
+        <a href="{{ url }}" class="entry medium">
+          <div class="image">
+            {{ assets:tile_wide }}
+              <img src="{{ glide:tile_wide preset="med"}}">
+            {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <div class="meta">{{ tags }}
+                    <span>
+                      {{ if last }}
+                         {{ title }}
+                      {{ else }}
+                          {{ title }}, 
+                      {{ /if }}
+                    </span>
+                 {{ /tags }}<br />
+                <button class="button hollow">View lionhound</button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:lionhound }}
+
+      {{ collection:lionhound sort="order" offset="6" limit="1" }}
+      <div class="cell small-12 medium-6 large-4">
+        <a href="{{ url }}" class="entry medium">
+          <div class="image">
+            {{ assets:tile_wide }}
+              <img src="{{ glide:tile_wide preset="med"}}" >
+            {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <div class="meta">{{ tags }}
+                    <span>
+                      {{ if last }}
+                         {{ title}}
+                      {{ else }}
+                          {{ title }}, 
+                      {{ /if }}
+                    </span>
+                 {{ /tags }}<br />
+                <button class="button hollow">View lionhound</button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:lionhound }}
+      {{ collection:lionhound sort="order" offset="7" limit="1" }}
+      <div class="cell small-12 medium-12 large-4">
+        <a href="{{ url }}" class="entry medium">
+          <div class="image">
+            {{ assets:tile_wide }}
+              <img src="{{ glide:tile_wide preset="med"}}" class="hide-for-medium-only">
+              <img src="{{ glide:tile_wide preset="wide"}}" class="show-for-medium-only">
+              
+            {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <p class="lead">{{ content }}</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:lionhound }}
+      
+    </div>
+  </div>
+</section>

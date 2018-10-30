@@ -1,0 +1,84 @@
+<section id="title">
+  <div class="grid-container grid-x align-center">
+    <div class="small-12 medium-10 columns small-centered text-center">
+      <h1>{{ title }}</h1>
+      <p class="intro">I am currently taking on new clients. Assuming your project is a good fit, I can work solo or as part of a larger team to eleveate your brand.</p>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <!-- Contact Container -->
+  <img src="/assets/img/bg-contact-5-sm.jpg" class="zuva-sm show-for-small-only">
+  <div class="contact-container">
+    <!-- Background Image -->
+    <div class="inner">
+      <!-- Forms -->
+      
+      <div class="grid-x grid-padding-x expanded">
+        <div class="cell small-12 medium-9 large-7 end">
+          <h3 class="budget-label small-text-center medium-text-left">Lets start with Budget...</h3>
+          
+          {{ form:create in="contact" }}
+
+              {{ if errors }}
+                  <div class="alert alert-danger">
+                      {{ errors }}
+                          {{ value }}<br>
+                      {{ /errors }}
+                  </div>
+              {{ /if }}
+
+              {{ if success }}
+                  <div class="alert alert-success">
+                      Form was submitted successfully.
+                  </div>
+              {{ /if }}
+
+            <div class="grid-x">
+              <div class="cell small-12 medium-9">
+              <div class="slider" data-slider data-start="10000" data-initial-start="10000" data-step="2000" data-end="150000" data-position-value-function="log" data-non-linear-base="5">
+                <span class="slider-handle" data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutputNonLinear"></span>
+              </div>
+              </div>
+              <div class="cell small-12 medium-3 budget">
+                $ <input type="number" id="sliderOutputNonLinear" name="budget" value="{{ old:budget }}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell small-12 medium-6">
+                <input type="text" name="name" value="{{ old:name }}" class="form-control" placeholder="Name" />
+              </div>
+              <div class="cell small-12 medium-6">
+                <input type="text" name="email" value="{{ old:email }}" class="form-control" placeholder="Email" />
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x ">
+              <div class="cell small-12 medium-6">
+                <input type="text" name="phone" value="{{ old:phone }}" class="form-control" placeholder="Phone Number" />
+              </div>
+              <div class="cell small-12 medium-6">
+                <input type="text" name="company" value="{{ old:company }}" class="form-control" placeholder="Company" />
+              </div>
+            </div>
+            <div class="grid-x">
+              <div class="cell small-12">
+                <textarea name="comment" class="form-control" placeholder="Project description..." rows="6">{{ old:comment }}</textarea>
+              </div>
+            </div>
+            <div class="button-row">
+              <div class="grid-x text-center medium-text-left">
+                <div class="cell medium-3">
+                  <button class="button large" type="submit">Submit</button>
+                </div>
+                <div class="cell medium-9">
+                  <h4 class="subheader medium-text-right">Formphobia? <a href="mailto:kyle@lionhound.com">kyle@lionhound.com</a> or <a href="tel:+1-530-412-0408">530.412.0408</a>
+                </div>
+              </div>
+            </div>
+            <input type="text" name="honeypot" class="honeypot" />
+          {{ /form:create }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:900,500,300,200,600,800' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Another awesome Statamic site">
+    <title>{{ title ensure_right=" / " }}{{ site_name }}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da1c5b">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="{{ theme:css }}">
+</head>
+
+<body class="section-{{ segment_1 or "home" }}">
+
+    {{ partial:nav }}
+
+    <main id="main">
+      {{ template_content }}
+      
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-12 text-center">
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/pub/kyle-spaulding/1/471/674" target="_blank" class="icon icon-mono linkedin">Linkedin</a>
+              <a href="https://instagram.com/rangerwilde/" target="_blank" class="icon icon-mono instagram">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>    
+    
+    <!-- © -->
+    <div class="attr l-side">
+      <p>Creative Works of <a href="/about">Kyle Spaulding</a></p>
+    </div> 
+    <div class="attr r-side ">
+      <p>© <script type="text/javascript">document.write(new Date().getFullYear());</script> LionHound</p>
+    </div>
+    
+    <!-- NAV -->
+    <div id="nav-overlay" data-animation-in="fade-in" data-animation-out="fade-out" data-toggler  data-animate="fade-in fade-out" >
+      <div class="menu-container">
+        <ul id="main-nav-ul" data-toggler=".nav-open">
+          {{ nav from="/" include_home="true" scope="tag" }}
+              <li{{ if is_current or is_parent }} class="active {{ title }}"{{ /if }}>
+                  <a href="{{ url }}">{{ tag:nav_title or title }}
+                  </a>
+              </li>
+          {{ /nav }}
+          {{# <li><a href="/lionhound" title="Lionhound"><img src="/assets/img/site-assets/icon-ridgeback.svg" onerror="this.onerror=null; this.src='/img/icon-ridgeback.png'" width="60" height="60" alt="Ridgeback Icon" class="svg ico-ridgeback"></a></li> #}}
+          
+          <!--
+          <li>Work</li>
+          <li><a href="about.html" title="About">About</a></li>
+          <li><a href="contact.html" title="Contact">Contact</a></li>
+          <li><a href="lionhounds.html" title="Lionhounds"><img src="/img/icon-ridgeback.svg" onerror="this.onerror=null; this.src='/img/icon-ridgeback.png'" width="60" height="60" alt="Ridgeback Icon" class="svg ico-ridgeback"></a></li>
+        
+            -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="/site/themes/lionhound/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/site/themes/lionhound/node_modules/what-input/dist/what-input.js"></script>
+    <script src="/site/themes/lionhound/node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="/site/themes/lionhound/js/svg.js"></script>
+    <script src="/site/themes/lionhound/js/jquery.fittext.js"></script>
+    <script src="/site/themes/lionhound/js/jquery.touchSwipe.min.js"></script>
+    <script src="/site/themes/lionhound/js/masonry.pkgd.min.js"></script>
+    <script src="/site/themes/lionhound/js/imagesloaded.pkgd.min.js"></script>
+    <script src="{{ theme:js }}"></script>
+    <script>
+      $(document).ready(function(){
+        $('#main').addClass('loaded');
+      });
+      // with jQuery
+      var $container = $('.work-grid');
+
+      // initialize Masonry after all images have loaded  
+      $container.imagesLoaded( function() {
+           $container.masonry();
+      });
+    </script>
+
+</body>
+</html>

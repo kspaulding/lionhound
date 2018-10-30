@@ -1,0 +1,30 @@
+<section class="regular">
+	
+	<header>
+		<h1>About Me</h1>
+		{{ sub_title wrap="h2" }}
+	</header>
+  
+	<article class="content">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x align-center">
+        <div class="cell small-12 medium-8 large-9 lead">
+      		{{ content }}
+        </div>
+{{#         
+        <div class="cell small-12 medium-4 large-3">
+      		<h3>Fun Facts</h3>
+      		{{ fun_facts | ul }}       
+        </div>
+#}}           
+      </div>
+    </div>
+	</article>
+	
+</section>
+
+<section class="instagram">
+  <div class="grid-container fluid">
+      <div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'OvnvRDzQxy8J2IQqIHM'});Pixlee.addSimpleWidget({widgetId:'4698'});};</script><script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+  </div>
+</section>

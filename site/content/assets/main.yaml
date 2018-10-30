@@ -1,0 +1,68 @@
+title: Main Assets
+path: assets
+url: /assets
+assets:
+  img/work-innovid-grid-lg-2.jpg:
+    title: Innovid website
+    alt: Innovid Website
+    focus: 46-63
+  img/work-innovid-grid-w-1.jpg:
+    title: Innovid
+    alt: Innovid
+    focus: 58-48
+  img/work-detail-krux-hero.jpg:
+    title: Krux
+    alt: Krux
+    focus: 43-50
+  img/work-krux-grid-m-5.jpg:
+    focus: 52-19
+  img/work-innovid-grid-lg.jpg:
+    title: Innovid Ribbon
+    alt: Innovid
+    focus: 56-53
+  img/work-integrous-grid-m.jpg:
+    title: Integrous Tile
+    alt: Integrous
+    focus: 69-47
+  img/women-1526411548.png:
+    title: Integrous Tile
+    alt: Integrous
+    focus: 48-46
+  img/35263-1280.jpg:
+    title: Tango Hero
+    alt: Tango App
+  img/work-detail-hero-redis.jpg:
+    title: Redis Labs
+    alt: Redis Labs
+    focus: 16-48
+  img/work/work-detail-innovid-hero.jpg:
+    title: Hero Innovid
+    alt: Innovid Home Page Slider
+  img/work/tile-wide-krux.png:
+    title: 'Tile Krux - Wide'
+    alt: Krux Salesforce
+    focus: 85-66
+  img/work/tile-wide-redis.png:
+    title: 'Tile Redis - Wide'
+    alt: Redis Labs
+    focus: 71-39
+  img/work/hero-transpak.png:
+    title: 'Hero - Transpak'
+    alt: Transpak
+    focus: 77-36
+  img/work/tile-tall-transpak.png:
+    title: 'Tile TransPak - Tall'
+    alt: TransPak
+    focus: 36-60
+  img/work/tile-wide-krux-1527188672.png:
+    focus: 38-54
+  img/work/tile-wide-cloudphysics.png:
+    focus: 86-48
+  img/work/tile-wide-redislabs.png:
+    focus: 63-43
+  img/dogs/dogs-zuva-16months-w.jpg:
+    title: 'Hunting - 16 Months'
+    alt: Zuva Hunting at 16 Months
+  img/dogs/dogs-zuva-16months-m.jpg:
+    title: 'Hunting - 16 Months'
+    alt: Zuva Hunting at 16 Months

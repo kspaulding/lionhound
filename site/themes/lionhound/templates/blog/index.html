@@ -1,0 +1,54 @@
+<!-- Main Content -->
+<section id="hero">
+  <div class="hero-img">
+    <img src="img/work-detail-krux-hero.jpg" alt="Work Detail Krux Hero">
+  </div>
+  <div class="row title-area">
+    <div class="small-12 medium-6 medium-offset-1 columns small-centered text-left">
+      <h1 class="text-left w-logo"><span>{{ title }}</span><img src="img/work-detail-krux-logo.png" width="200" alt="Work Detail Krux Logo"></h1>
+      
+      <div class="intro">
+        {{ content }}
+      </div>
+    </div>
+    <div class="small-12 medium-3 large-3 medium-offset-1 columns">
+      <aside class="project-desc">
+        <a href="http://bluecoastweb.com" target="_blank" class="bc-ico has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Crafted at Blue Coast"><img src="img/bc-favicon.png" width="24" height="24" alt="Blue Coast Icon" ></a>
+        <h6>Client</h6>
+        <p>Krux</p>
+        <h6>Project</h6>
+        <p>Website, Application & Collateral</p>
+        <h6>Deliverables</h6>
+        <p>Concept, Design & Development</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="image-grid-listing">
+  <!-- Work Row 1 -->
+  <div class="row expanded">
+    <div class="small-12 columns">
+      
+    </div>
+  </div>
+</section>
+
+<section class="regular">
+
+	<header>
+		<h1>{{ title }}</h1>
+		<h2>{{ content }}</h2>
+	</header>
+
+	<article class="list">
+		{{ collection:blog paginate="true" as="posts" limit="4" }}
+			{{ posts scope="tag" }}
+				{{ partial:block }}
+			{{ /posts }}
+
+			{{ partial:pagination }}
+		{{ /collection:blog }}
+	</article>
+
+</section>

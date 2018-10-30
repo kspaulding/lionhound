@@ -1,0 +1,27 @@
+/*
+Font: 		Nexa XBold
+Style: 		Regular
+URL: 		https://www.youworkforthem.com/font/T3972/nexa
+Foundry: 	Fontfabric
+Foundry: 	https://www.youworkforthem.com/designer/105/fontfabric
+Copyright:	Copyright (c) 2010 by Svetoslav Simov. All rights reserved.
+Version: 	17
+Created:	May 11, 2015
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'Nexa-XBold';
+	src: url('nexa-xbold.eot');
+	src: url('nexa-xbold.eot?#iefix') format('embedded-opentype'),
+             url('nexa-xbold.woff2') format('woff2'),
+	     url('nexa-xbold.woff') format('woff'),
+	     url('nexa-xbold.ttf') format('truetype'),
+	     url('nexa-xbold.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

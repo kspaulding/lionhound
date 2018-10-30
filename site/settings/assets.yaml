@@ -1,0 +1,24 @@
+image_manipulation_route: /img
+image_manipulation_secure: true
+auto_crop: true
+image_manipulation_driver: gd
+image_manipulation_cached: false
+image_manipulation_presets:
+  med:
+    w: 595
+    h: 560
+    q: 80
+  tall:
+    w: 700
+    h: 1320
+    q: 90
+  wide:
+    w: 1000
+    h: 471
+    q: 80
+  hero:
+    w: auto
+    h: 650
+    q: 80
+thumbnail_max_width: 6000
+thumbnail_max_height: 6000

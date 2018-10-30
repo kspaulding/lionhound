@@ -1,0 +1,70 @@
+title: Work Detail
+create_title: ""
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: Title
+        localizable: true
+        width: 50
+      client:
+        type: text
+        display: Client
+        width: 50
+      subtitle:
+        type: textarea
+        display: Subtitle
+        width: 50
+      client_logo:
+        type: assets
+        display: Client Logo
+        container: main
+        folder: img/work
+        restrict: true
+        max_files: 1
+        width: 50
+      bluecoast_work:
+        type: toggle
+        display: Bluecoast Work
+        width: 25
+      h_scroll_hero:
+        type: toggle
+        width: 25
+        display: Horizontal Scroll Hero
+      hero_image:
+        type: assets
+        display: Hero Image
+        container: main
+        folder: img/work
+        restrict: false
+        max_files: 1
+        width: 50
+      tile_wide:
+        type: assets
+        display: Tile Wide
+        container: main
+        folder: img/work
+        restrict: false
+        max_files: 1
+        mode: grid
+        width: 50
+      tile_tall:
+        container: main
+        folder: img/work
+        restrict: true
+        type: assets
+        width: 50
+        display: Tile Tall
+        max_files: 1
+      work_samples:
+        type: assets
+        display: Work Samples
+        container: main
+        folder: img/work
+        restrict: true
+      tags:
+        type: taxonomy
+        taxonomy: tags
+taxonomies: true

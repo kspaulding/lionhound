@@ -1,0 +1,35 @@
+title: Contact Me
+fields:
+  name:
+    display: Name
+    validate: required|min:2
+  email:
+    display: Email Address
+    validate: required|email
+  phone:
+    display: Phone Number
+    validate: integer
+  company:
+    display: Company
+    validate: ""
+  budget:
+    display: Budget
+    validate: ""
+  comment:
+    display: Comment
+columns:
+  - name
+  - email
+  - phone
+  - company
+  - budget
+  - comment
+metrics:
+  - 
+    type: total
+    label: Total Responses
+email:
+  - 
+    to: '{{ email }}'
+    subject: Thank you for contacting LionHound
+    reply_to: kyle@lionhound.com

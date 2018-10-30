@@ -1,0 +1,18 @@
+title: Default
+fields:
+  content:
+    type: markdown
+    display: Content
+    localizable: true
+    cheatsheet: false
+    restrict_assets: false
+  work_previews:
+    type: collection
+    display: Work Previews
+    collection:
+      - work
+    sort: fieldname:order
+    mode: panes
+  tags:
+    type: taxonomy
+    taxonomy: tags

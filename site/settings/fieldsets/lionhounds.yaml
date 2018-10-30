@@ -1,0 +1,20 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+      images:
+        container: main
+        folder: img/dogs
+        restrict: true
+        type: assets
+        display: Images
+      content:
+        type: textarea
+        display: Content
+taxonomies: true
+title: Lionhound
+create_title: Lionhound

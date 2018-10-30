@@ -1,0 +1,4 @@
+title: Work
+order: number
+fieldset: work_detail
+template: work/work-detail

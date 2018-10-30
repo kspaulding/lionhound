@@ -1,0 +1,12 @@
+title: Logos
+create_title: ""
+fields:
+  logo:
+    type: assets
+    display: Logo
+    container: main
+    folder: img/work
+    restrict: false
+  tags:
+    type: taxonomy
+    taxonomy: tags

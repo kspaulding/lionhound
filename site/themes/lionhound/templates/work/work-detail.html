@@ -1,0 +1,89 @@
+<!-- Main Content -->
+<section id="hero" class="{{if h_scroll_hero == "true" }}hscroll{{/if}}">
+  <div class="hero-img">
+    {{if h_scroll_hero == "true" }}
+      {{ assets:hero_image }}
+        <img src="{{ glide:hero_image}}">
+      {{ assets:hero_image }}
+    {{ else }}
+      {{ assets:hero_image }}
+        <img src="{{ glide:hero_image preset="hero"}}">
+      {{ assets:hero_image }}
+    {{/if}}
+    
+  </div>
+  <div class="grid-x title-area align-middle">
+    <div class="cell small-12 medium-6 medium-offset-1 text-left">
+      <h1 class="text-center medium-text-left w-logo"><span>{{ title }}</span>
+        {{ assets:client_logo }}
+          <img src="{{ url }}" >
+        {{ /assets:client_logo }}
+      </h1>
+      
+      <div class="intro">
+        {{ content }}
+      </div>
+    </div>
+    <div class="cell small-12 medium-3 large-3 medium-offset-1">
+      <aside class="project-desc">
+        {{ if bluecoast_work == true }}<a href="http://bluecoastweb.com" target="_blank" class="bc-ico has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Crafted at Blue Coast"><img src="/assets/img/site-assets/bc-favicon.png" width="24" height="24" alt="Blue Coast Icon" ></a>{{ /if }}
+        <h6>Client</h6>
+        <p>{{ title }}</p>
+        <h6>Deliverables</h6>
+        <div class="meta">{{ tags }}
+              <span>
+                {{ if last }}
+                   {{ title}}
+                {{ else }}
+                    {{ title }}, 
+                {{ /if }}
+              </span>
+           {{ /tags }}
+         </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="work" class="image-grid-listing">
+  <!-- Work Row 1 -->
+  <div class="grid-continer">
+    <div class="grid-x grid-padding-x work-grid">
+      <div class="grid-sizer"></div>
+      {{ work_samples sort="order" }}
+        <div class="cell">
+            <img src="{{ value }}" />
+        </div>
+      {{ /work_samples }}
+    </div>
+  </div>
+</section>
+
+  {{ collection:previous in="work" as="posts"  limit="1"}}
+    {{ posts }}
+    <div class="prev-wrap">
+        <a href="{{ url }}" class="proj-nav nav-prev">&nbsp;</a>
+    </div>
+    <div id="tail-prev">
+      {{ assets:client_logo }}
+        <img src="{{ url }}" >
+      {{ /assets:client_logo }}
+    </div>
+    {{ /posts }}
+  {{ /collection:previous }}
+  
+  {{ collection:next in="work" as="posts"  limit="1" }}
+    {{ posts }}
+    <div class="next-wrap">
+        <a href="{{ url }}" class="proj-nav nav-next">&nbsp;</a>
+    </div>
+    <div id="tail-next">
+      {{ assets:client_logo }}
+        <img src="{{ url }}" >
+      {{ /assets:client_logo }}
+    </div>
+    {{ /posts }}
+
+  {{ /collection:next }}

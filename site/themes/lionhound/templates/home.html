@@ -1,0 +1,279 @@
+<section id="title">
+  <div class="grid-x grid-margin-x text-center">
+    <div class="cell small-12 medium-8 medium-offset-2"><h1>Work</h1>
+      <div class="intro">{{ content }}</div>  
+    </div>
+  </div>
+</section>
+
+<section id="work" class="image-grid-listing">
+  
+  <!-- Work Row 1 -->
+  
+  <div class="grid-container fluid">
+    <div class="grid-x">
+      {{ collection:work sort="order" limit="1" }}
+        <div class="cell small-12 large-8">
+          <a href="{{ url }}" class="entry feature">
+            <div class="image">
+              {{ assets:tile_wide }}
+                <img src="{{ glide:tile_wide preset="wide"}}" class="hide-for-small-only">
+                 <img src="{{ glide:tile_wide preset="med"}}" class="show-for-small-only">
+              {{ /assets:tile_wide }}
+            </div>
+            <div class="content">
+              <div class="inner">
+                <h2>{{ title }}</h2>
+                <div class="meta">{{ tags }}
+                      <span>
+                        {{ if last }}
+                           {{ title }}
+                        {{ else }}
+                            {{ title }}, 
+                        {{ /if }}
+                      </span>
+                   {{ /tags }}<br />
+                  <button class="button hollow">View Work</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      {{ /collection:work }}
+      {{ collection:work sort="order" offset="1" limit="1" }}
+      <div class="cell small-12 medium-6 large-4">
+        <a href="{{ url }}" class="entry">
+          <div class="image">
+              {{ assets:tile_wide }}
+                <img src="{{ glide:tile_wide preset="med"}}" >
+              {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <div class="meta">{{ tags }}
+                    <span>
+                      {{ if last }}
+                         {{ title }}
+                      {{ else }}
+                          {{ title }}, 
+                      {{ /if }}
+                    </span>
+                 {{ /tags }}<br />
+                <button class="button hollow">View Work</button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:work }}
+      {{ collection:work sort="order" offset="2" limit="1" }}
+      <div class="cell small-12 medium-6 large-4">
+        <a href="{{ url }}" class="entry medium">
+          <div class="image">
+            {{ assets:tile_tall }}
+              <img src="{{ glide:tile_tall preset="tall"}}" class="show-for-large">
+            {{ /assets:tile_tall }}
+            {{ assets:tile_wide }}
+              <img src="{{ glide:tile_wide preset="med"}}" class="hide-for-large">
+            {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <div class="meta">{{ tags }}
+                    <span>
+                      {{ if last }}
+                         {{ title }}
+                      {{ else }}
+                          {{ title }}, 
+                      {{ /if }}
+                    </span>
+                 {{ /tags }}<br />
+                <button class="button hollow">View Work</button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:work }}
+      
+      <div class="cell small-12 large-8">
+        <div class="grid-x">
+          
+          {{ collection:work sort="order" offset="3" limit="1" }}
+          <div class="cell small-12 medium-6 ">
+            <a href="{{ url }}" class="entry medium">
+              <div class="image">
+                {{ assets:tile_wide }}
+                  <img src="{{ glide:tile_wide preset="med"}}" >
+                {{ /assets:tile_wide }}
+              </div>
+              <div class="content">
+                <div class="inner">
+                  <h2>{{ title }}</h2>
+                  <div class="meta">{{ tags }}
+                        <span>
+                          {{ if last }}
+                             {{ title }}
+                          {{ else }}
+                              {{ title }}, 
+                          {{ /if }}
+                        </span>
+                     {{ /tags }}<br />
+                    <button class="button hollow">View Work</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {{ /collection:work }}
+          
+          {{ collection:work sort="order" offset="4" limit="1" }}
+          <div class="cell small-12 medium-6 ">
+            <a href="{{ url }}" class="entry medium">
+              <div class="image">
+                {{ assets:tile_wide }}
+                  <img src="{{ glide:tile_wide preset="med"}}" >
+                {{ /assets:tile_wide }}
+              </div>
+              <div class="content">
+                <div class="inner">
+                  <h2>{{ title }}</h2>
+                  <div class="meta">{{ tags }}
+                        <span>
+                          {{ if last }}
+                             {{ title }}
+                          {{ else }}
+                              {{ title }}, 
+                          {{ /if }}
+                        </span>
+                     {{ /tags }}<br />
+                    <button class="button hollow">View Work</button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {{ /collection:work }}
+          
+          <div class="cell small-12 medium-12">
+            <div class="entry shout-out">
+              <div class="image">
+                <img src="/assets/img/site-assets/work-braggin-grid-wide.gif" width="1000" alt="I Deliver" class="hide-for-small-only">
+              </div>
+              <div class="shout-out-text">
+                <div class="inner">
+                  <h4 class="fitext">From branding, to UI/UX, to App design and beyond, LionHound delivers on nearly 20 years of digital craftmanship. Are you prepared to elevate your brand?</h4>
+                  <a href="/contact" class="button hollow secondary">Lets Talk</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {{ collection:work sort="order" offset="5" limit="1" }}
+      <div class="cell small-12 medium-6 large-4">
+        <a href="{{ url }}" class="entry medium">
+          <div class="image">
+            {{ assets:tile_wide }}
+              <img src="{{ glide:tile_wide preset="med"}}">
+            {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <div class="meta">{{ tags }}
+                    <span>
+                      {{ if last }}
+                         {{ title }}
+                      {{ else }}
+                          {{ title }}, 
+                      {{ /if }}
+                    </span>
+                 {{ /tags }}<br />
+                <button class="button hollow">View Work</button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:work }}
+
+      {{ collection:work sort="order" offset="6" limit="1" }}
+      <div class="cell small-12 medium-6 large-4">
+        <a href="{{ url }}" class="entry medium">
+          <div class="image">
+            {{ assets:tile_wide }}
+              <img src="{{ glide:tile_wide preset="med"}}" >
+            {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <div class="meta">{{ tags }}
+                    <span>
+                      {{ if last }}
+                         {{ title}}
+                      {{ else }}
+                          {{ title }}, 
+                      {{ /if }}
+                    </span>
+                 {{ /tags }}<br />
+                <button class="button hollow">View Work</button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:work }}
+      {{ collection:work sort="order" offset="7" limit="1" }}
+      <div class="cell small-12 medium-12 large-4">
+        <a href="{{ url }}" class="entry medium">
+          <div class="image">
+            {{ assets:tile_wide }}
+              <img src="{{ glide:tile_wide preset="med"}}" class="hide-for-medium-only">
+              <img src="{{ glide:tile_wide preset="wide"}}" class="show-for-medium-only">
+              
+            {{ /assets:tile_wide }}
+          </div>
+          <div class="content">
+            <div class="inner">
+              <h2>{{ title }}</h2>
+              <div class="meta">{{ tags }}
+                    <span>
+                      {{ if last }}
+                         {{ title}},
+                      {{ else }}
+                          {{ title }}, 
+                      {{ /if }}
+                    </span>
+                 {{ /tags }}<br />
+                <button class="button hollow">View Work</button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ /collection:work }}
+      
+    </div>
+  </div>
+  <div class="logo-grid">
+    <div class="grid-container fluid logos-grid">
+      <div class="grid-x grid-margin-x align-middle align-center">
+      
+        {{ collection:logos sort="order"}}
+        <div class="cell small-6 medium-4 text-center" >
+            <div class="image" >
+              {{ assets:logo }}
+                <img src="{{url}}" >
+              {{ /assets:logo }}
+            </div>
+        </div>
+        {{ /collection:logos }}
+      </div>
+    </div>
+  </div>
+</section>
