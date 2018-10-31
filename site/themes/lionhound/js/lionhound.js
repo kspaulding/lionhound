@@ -4,7 +4,7 @@ document.body.addEventListener('touchstart',function(){},false);
 
 /* Fit Text */
 
-$("h4.fitext").fitText(2.3, { minFontSize: '13px' });
+$("h4.fitext").fitText(2.3, { minFontSize: '16px' });
 $(".intro p").fitText(2.7, { minFontSize: '24px', maxFontSize: '30px' });
 
 $(document).ready(function(){
