@@ -66,3 +66,26 @@ assets:
   img/dogs/dogs-zuva-16months-m.jpg:
     title: 'Hunting - 16 Months'
     alt: Zuva Hunting at 16 Months
+  img/work/tile-wide-poets.jpg:
+    title: Poets.org
+    alt: Poets.org
+    focus: 77-47
+  img/work/tile-tall-poets.jpg:
+    title: Poets.org
+    alt: Poets.org
+  img/work/hero-poets.jpg:
+    title: Poets.org
+    alt: Poets.org
+  img/work/hero-transpak.jpg:
+    title: TransPak
+    alt: TransPak
+  img/work/transpak-packaging-custom.jpg:
+    title: TransPak Custom Packaging
+    alt: TransPak Custom Packaging
+  img/work/transpak-packaging.jpg:
+    title: TransPak Packaging
+    alt: TransPak Packaging
+  img/work/transpak-news.jpg:
+    alt: TransPak News
+  img/work/transpak-home.jpg:
+    alt: TransPak Home

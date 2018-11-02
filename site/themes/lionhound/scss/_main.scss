@@ -328,7 +328,7 @@ NAVIGATION STYLES
     position: relative;
     top: 6rem;
     ul {
-      background: rgba(255, 255, 255, .75);
+      background: rgba(255, 255, 255, .85);
       display: inline-block;
       border: 6px solid  $primary-color;
       padding: 10px 20px;
@@ -822,13 +822,15 @@ WORK GRID STYLES
 		background: #fff;
 		@media only screen and (min-width: 40em) {
 			padding: 2rem;
+			max-width: 85%;
+			max-height: 85%;
 		}
 		@media only screen and (min-width: 60em) {
 			padding: 4rem;
 		}
 		img {
-			max-width: 85%;
-			max-height: 85%;
+			max-width: 95%;
+			max-height: 95%;
 		}
 	}
 }
@@ -892,15 +894,17 @@ img.zuva-sm {
     input {
       padding: 0;
       margin: 0;
-      display: inline;
+      display: inline-block;
       width: auto;
       background: none;
       border: none;
-      font-size: 3.125rem;
+      font-size: 3.125rem !important;
       color:  $primary-color;
       font-weight: 800;
       width: auto;
       box-shadow: none;
+			overflow: visible;
+			height: 4rem;
     }
   }
   .button-row {
@@ -1008,6 +1012,9 @@ WORK DETAIL STYLES
 
 aside.project-desc {
   position: relative;
+	@media only screen and (min-width: 40em) {
+		padding-left: 1rem;
+	}
   .bc-ico.has-tip {
     opacity: .5;
     display: inline-block;

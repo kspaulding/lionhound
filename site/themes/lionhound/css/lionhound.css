@@ -3165,19 +3165,19 @@ textarea {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #cccccc; }
+  color: #777777; }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #cccccc; }
+  color: #777777; }
 
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  color: #cccccc; }
+  color: #777777; }
 
 input::placeholder,
 textarea::placeholder {
-  color: #cccccc; }
+  color: #777777; }
 
 input:disabled, input[readonly],
 textarea:disabled,
@@ -6571,7 +6571,7 @@ NAVIGATION STYLES
     position: relative;
     top: 6rem; }
     #nav-overlay .menu-container ul {
-      background: rgba(255, 255, 255, 0.75);
+      background: rgba(255, 255, 255, 0.85);
       display: inline-block;
       border: 6px solid #da1c5c;
       padding: 10px 20px; }
@@ -6931,13 +6931,15 @@ WORK GRID STYLES
     background: #fff; }
     @media only screen and (min-width: 40em) {
       .logo-grid .cell .image {
-        padding: 2rem; } }
+        padding: 2rem;
+        max-width: 85%;
+        max-height: 85%; } }
     @media only screen and (min-width: 60em) {
       .logo-grid .cell .image {
         padding: 4rem; } }
     .logo-grid .cell .image img {
-      max-width: 85%;
-      max-height: 85%; }
+      max-width: 95%;
+      max-height: 95%; }
 
 /*********************
 ABOUT STYLES
@@ -6985,15 +6987,17 @@ img.zuva-sm {
   #contact .budget input {
     padding: 0;
     margin: 0;
-    display: inline;
+    display: inline-block;
     width: auto;
     background: none;
     border: none;
-    font-size: 3.125rem;
+    font-size: 3.125rem !important;
     color: #da1c5c;
     font-weight: 800;
     width: auto;
-    box-shadow: none; }
+    box-shadow: none;
+    overflow: visible;
+    height: 4rem; }
 
 #contact .button-row {
   background: rgba(255, 255, 255, 0.75);
@@ -7072,6 +7076,9 @@ WORK DETAIL STYLES
 *********************/
 aside.project-desc {
   position: relative; }
+  @media only screen and (min-width: 40em) {
+    aside.project-desc {
+      padding-left: 1rem; } }
   aside.project-desc .bc-ico.has-tip {
     opacity: .5;
     display: inline-block;
