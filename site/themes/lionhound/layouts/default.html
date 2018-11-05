@@ -84,13 +84,17 @@
       $(document).ready(function(){
         $('#main').addClass('loaded');
       });
+      
       // with jQuery
-      var $container = $('.work-grid');
+      
+      $(document).ready(function () {
+          var $container = $(".work-grid");
 
-      // initialize Masonry after all images have loaded  
-      $container.imagesLoaded( function() {
-           $container.masonry();
+          $container.imagesLoaded(function () {
+              $container.masonry();
+          });
       });
+
     </script>
 
 </body>

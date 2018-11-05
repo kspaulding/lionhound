@@ -28,9 +28,10 @@
       <aside class="project-desc">
         {{ if bluecoast_work == true }}<a href="http://bluecoastweb.com" target="_blank" class="bc-ico has-tip top" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Crafted at Blue Coast"><img src="/assets/img/site-assets/bc-favicon.png" width="24" height="24" alt="Blue Coast Icon" ></a>{{ /if }}
         <h6>Client</h6>
-        <p>{{ title }}</p>
+        <p>{{ title }} {{ if bluecoast_work == true }}<br /><a href="http://bluecoastweb.com" target="_blank" title="Crafted at Blue Coast" style="font-weight: 300;">a Blue Coast Project</a>{{ /if }}</p>
         <h6>Deliverables</h6>
-        <div class="meta">{{ tags }}
+        <div class="meta">
+          {{ tags }}
               <span>
                 {{ if last }}
                    {{ title}}

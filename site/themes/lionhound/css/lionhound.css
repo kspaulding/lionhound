@@ -6829,6 +6829,10 @@ WORK GRID STYLES
   display: block; }
   .image-grid-listing .entry .image img {
     width: 100%; }
+  .image-grid-listing .entry .bc-ico {
+    position: absolute;
+    top: 1rem;
+    right: 1rrem; }
   .image-grid-listing .entry .content {
     position: absolute;
     left: 0px;

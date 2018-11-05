@@ -18,9 +18,9 @@
             <div class="image">
               {{ assets:tile_wide }}
                 <img src="{{ glide:tile_wide preset="wide"}}" class="hide-for-small-only">
-                 <img src="{{ glide:tile_wide preset="med"}}" class="show-for-small-only">
-              {{ /assets:tile_wide }}
-            </div>
+                <img src="{{ glide:tile_wide preset="med"}}" class="show-for-small-only">
+              {{ /assets:tile_wide }}              
+            </div>            
             <div class="content">
               <div class="inner">
                 <h2>{{ title }}</h2>
@@ -241,15 +241,17 @@
           <div class="content">
             <div class="inner">
               <h2>{{ title }}</h2>
-              <div class="meta">{{ tags }}
-                    <span>
-                      {{ if last }}
-                         {{ title}},
-                      {{ else }}
-                          {{ title }}, 
-                      {{ /if }}
-                    </span>
-                 {{ /tags }}<br />
+              <div class="meta">
+                <span>
+                  {{ tags }}
+                  {{ if last }}
+                     {{ title}},
+                  {{ else }}
+                      {{ title }}, 
+                  {{ /if }}
+                  {{ /tags }}
+                </span>
+                 <br />
                 <button class="button hollow">View Work</button>
               </div>
             </div>
