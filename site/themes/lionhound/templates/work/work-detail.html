@@ -61,8 +61,8 @@
     </div>
   </div>
 </section>
-
-  {{ collection:previous in="work" as="posts"  limit="1"}}
+  <div class="mobile-work-deatil-nav"></div>
+  {{ collection:previous in="work" as="posts" limit="1"}}
     {{ posts }}
     <div class="prev-wrap">
         <a href="{{ url }}" class="proj-nav nav-prev">&nbsp;</a>
@@ -75,7 +75,7 @@
     {{ /posts }}
   {{ /collection:previous }}
   
-  {{ collection:next in="work" as="posts"  limit="1" }}
+  {{ collection:next in="work" as="posts" limit="1" }}
     {{ posts }}
     <div class="next-wrap">
         <a href="{{ url }}" class="proj-nav nav-next">&nbsp;</a>
